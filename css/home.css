@@ -1,0 +1,19 @@
+:root {
+    --bg-utama: #121212;
+    --bg-sekunder: #1A1A1A;
+    --teks-utama: #E0E0E0;
+    --aksen-merah: #E3000F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-sekunder);
+    color: var(--teks-utama);
+    line-height: 1.6;
+}
