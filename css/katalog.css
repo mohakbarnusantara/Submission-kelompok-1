@@ -1,0 +1,30 @@
+:root {
+    --bg-utama: #121212;
+    --bg-sekunder: #1A1A1A;
+    --teks-utama: #E0E0E0;
+    --aksen-merah: #E3000F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, .logo h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1.5px; 
+}
+
+body {
+    background-color: var(--bg-sekunder);
+    color: var(--teks-utama);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--bg-sekunder);
+    padding: 15px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5 );
+}
