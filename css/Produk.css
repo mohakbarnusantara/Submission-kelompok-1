@@ -130,6 +130,37 @@ header {
     color: var(--teks-utama);
 }
 
+.filter-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn-filter {
+    background-color: var(--bg-sekunder);
+    color: var(--teks-utama);
+    border: 2px solid var(--aksen-merah);
+    padding: 10px 25px;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-filter:hover {
+    background-color: var(--aksen-merah);
+    color: #fff;
+}
+
+.btn-filter.aktif {
+    background-color: var(--aksen-merah);
+    color: #fff;
+}
+
+.sembunyi {
+    display: none !important;
+}
 .grid-produk {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -205,4 +236,108 @@ header {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+.hamburger {
+    display: none; 
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--teks-utama);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.tombol-tutup {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-links{
+        position: fixed; 
+        top: 0;
+        right: -100%; 
+        left: auto; 
+        width: 250px; 
+        height: 100vh; 
+        background-color: var(--bg-sekunder);
+        flex-direction: column;
+        justify-content: flex-start; 
+        padding-top: 80px;
+        align-items: center;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.6); 
+        z-index: 1000;
+    }
+    .nav-links.aktif {
+        right: 0;
+    }
+
+    .tombol-tutup {
+        display: block;
+        position: absolute;
+        top: 20px; 
+        right: 30px; 
+        font-size: 2.5rem; 
+        color: var(--teks-utama);
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .tombol-tutup:hover {
+        color: var(--aksen-merah);
+    }
+
+    .hero-section, 
+    .produk-highlight, 
+    .halaman-tentang, 
+    .footer-home {
+        padding: 50px 20px; 
+    }
+
+    .hero-content h1, 
+    .halaman-tentang h1, 
+    .produk-highlight h2 {
+        font-size: 2rem; 
+    }
+
+    .tentang-konten {
+        flex-direction: column; 
+        gap: 30px;
+    }
+    .tentang-toko {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    
+    .filter-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .btn-filter {
+        margin: 0;
+        font-size: 0.9rem;
+    }
 }

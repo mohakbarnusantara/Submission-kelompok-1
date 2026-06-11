@@ -8,147 +8,144 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="Home.html">
-          <img src="/assets/quality-hero-section.png" alt="Logo Quality Distro">
-        </a>
-        <h2>Quality Distro</h2>
+    <!-- HEADER -->
+      <header>
+          <nav class="navbar">
+              <div class="logo">
+                  <a href="Home.html">
+                      <img src="/assets/quality-hero-section.png" alt="Logo Quality Distro">
+                  </a>
+                  <h2>Quality Distro</h2>
+              </div>
+              <div class="hamburger" id="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+
+              <ul class="nav-links">
+                  <li class="tombol-tutup" id="tombol-tutup">&times;</li>
+                  <li><a href="Home.html">Home</a></li>
+                  <li><a href="Produk.html">Produk</a></li>
+                  <li><a href="Tentang.html">Tentang</a></li>
+              </ul>
+          </nav>
+      </header>
+
+    <!-- TAMPILAN PRODUK -->
+    <section class="produk-highlight">
+      <h2>Produk Kami</h2>
+
+      <div class="filter-container">
+          <button class="btn-filter aktif" data-filter="semua">Semua</button>
+          <button class="btn-filter" data-filter="pakaian">Pakaian</button>
+          <button class="btn-filter" data-filter="aksesoris">Aksesoris</button>
       </div>
-      <ul class="nav-links">
-        <li><a href="Home.html">Home</a></li>
-        <li><a href="Produk.html">Produk</a></li>
-        <li><a href="Tentang.html">Tentang</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- HERO -->
-  <section class="hero-section">
-    <div class="hero-content">
-      <p>Temukan koleksi pakaian berkualitas dengan harga terjangkau. Tampil beda dengan produk kebanggaan lokal!</p>
-      <a href="tampilan-produk.html" class="btn-hero">Lihat Produk Unggulan</a>
-    </div>
-  </section>
+      <div class="grid-produk">
 
-  <!-- TAMPILAN PRODUK -->
-  <section class="produk-highlight">
-    <h2>Tampilan Produk</h2>
-    <div class="grid-produk">
+        <article class="kartu-produk" data-kategori="pakaian">
+          <img src="/assets/produk4.jpeg" alt="Kategori Jaket">
+          <h1>Jaket</h1>
+          <p>Harga: Rp 350.000</p>
+          <p>Ukuran: M, L, XL</p>
+        </article>
 
-      <!-- Jaket -->
-      <article class="kartu-produk">
-        <img src="/assets/produk4.jpeg" alt="Kategori Jaket">
-        <h1>Jaket</h1>
-        <p>Harga: Rp 350.000</p>
-        <p>Ukuran: M, L, XL</p>
-      </article>
+        <article class="kartu-produk" data-kategori="pakaian">
+          <img src="/assets/produk3.jpeg" alt="Kategori Windbreaker">
+          <h1>Windbreaker</h1>
+          <p>Harga: Rp 400.000</p>
+          <p>Ukuran: M, L, XL</p>
+        </article>
 
-      <!-- Windbreaker -->
-      <article class="kartu-produk">
-        <img src="/assets/produk3.jpeg" alt="Kategori Windbreaker">
-        <h1>Windbreaker</h1>
-        <p>Harga: Rp 400.000</p>
-        <p>Ukuran: M, L, XL</p>
-      </article>
+        <article class="kartu-produk" data-kategori="aksesoris">
+          <img src="/assets/produk5.jpeg" alt="Kategori Topi Cras Es Noster">
+          <h1>Topi Cras Es Noster</h1>
+          <p>Harga: Rp 150.000</p>
+          <p>Ukuran: 1 model saja</p>
+        </article>
 
-      <!-- Topi -->
-      <article class="kartu-produk">
-        <img src="/assets/produk5.jpeg" alt="Kategori Topi Cras Es Noster">
-        <h1>Topi Cras Es Noster</h1>
-        <p>Harga: Rp 150.000</p>
-        <p>Ukuran: 1 model saja</p>
-      </article>
+        <article class="kartu-produk" data-kategori="aksesoris">
+          <img src="/assets/produk6.jpeg" alt="Kategori Sandal Rushlight">
+          <h1>Sandal Rushlight</h1>
+          <p>Harga: Rp 200.000</p>
+          <p>Ukuran: 39 - 43</p>
+        </article>
 
-      <!-- Sandal -->
-      <article class="kartu-produk">
-        <img src="/assets/produk6.jpeg" alt="Kategori Sandal Rushlight">
-        <h1>Sandal Rushlight</h1>
-        <p>Harga: Rp 200.000</p>
-        <p>Ukuran: 39 - 43</p>
-      </article>
+        <article class="kartu-produk" data-kategori="pakaian">
+          <img src="/assets/kaosEQBv.jpeg" alt="Kategori Kaos EQBV">
+          <h1>Kaos EQBV</h1>
+          <p>Harga: Rp 120.000</p>
+          <p>Ukuran: M, L, XL</p>
+        </article>
 
-      <!-- Kaos -->
-      <article class="kartu-produk">
-        <img src="/assets/kaosEQBv.jpeg" alt="Kategori Kaos EQBV">
-        <h1>Kaos EQBV</h1>
-        <p>Harga: Rp 120.000</p>
-        <p>Ukuran: M, L, XL</p>
-      </article>
+        <article class="kartu-produk" data-kategori="pakaian">
+          <img src="/assets/celanaJeans.png" alt="Celana Pendek Jeans">
+          <h1>Celana Panjang</h1>
+          <p>Harga: Rp 250.000</p>
+          <p>Ukuran: 28 - 33</p>
+        </article>
 
-      <!-- Celana Panjang -->
-      <article class="kartu-produk">
-        <img src="/assets/celanaJeans.png" alt="Celana Pendek Jeans">
-        <h1>Celana Panjang</h1>
-        <p>Harga: Rp 250.000</p>
-        <p>Ukuran: 28 - 33</p>
-      </article>
+        <article class="kartu-produk" data-kategori="pakaian">
+          <img src="/assets/CelanaPendekHitam.jpeg" alt="Celana Pendek Hitam">
+          <h1>Celana Pendek</h1>
+          <p>Harga: Rp 180.000</p>
+          <p>Ukuran: M, L, XL</p>
+        </article>
 
-      <!-- Celana Pendek -->
-      <article class="kartu-produk">
-        <img src="/assets/CelanaPendekHitam.jpeg" alt="Celana Pendek Hitam">
-        <h1>Celana Pendek</h1>
-        <p>Harga: Rp 180.000</p>
-        <p>Ukuran: M, L, XL</p>
-      </article>
+        <article class="kartu-produk" data-kategori="aksesoris">
+          <img src="/assets/tasHippo.jpeg" alt="Tas Kecil Hippo">
+          <h1>Tas Kecil Hippo</h1>
+          <p>Harga: Rp 300.000</p>
+          <p>Ukuran: 1 model saja</p>
+        </article>
 
-      <!-- Tas Kecil -->
-      <article class="kartu-produk">
-        <img src="/assets/tasHippo.jpeg" alt="Tas Kecil Hippo">
-        <h1>Tas Kecil Hippo</h1>
-        <p>Harga: Rp 300.000</p>
-        <p>Ukuran: 1 model saja</p>
-      </article>
+        <article class="kartu-produk" data-kategori="aksesoris">
+          <img src="/assets/dompetRusher.jpeg" alt="Dompet Rusher">
+          <h1>Dompet Rusher</h1>
+          <p>Harga: Rp 150.000</p>
+          <p>Ukuran: 1 model saja</p>
+        </article>
 
-      <!-- Dompet -->
-      <article class="kartu-produk">
-        <img src="/assets/dompetRusher.jpeg" alt="Dompet Rusher">
-        <h1>Dompet Rusher</h1>
-        <p>Harga: Rp 150.000</p>
-        <p>Ukuran: 1 model saja</p>
-      </article>
+        <article class="kartu-produk" data-kategori="aksesoris">
+          <img src="/assets/ikatHippo.jpeg" alt="Ikat Pinggang Hippo">
+          <h1>Ikat Pinggang</h1>
+          <p>Harga: Rp 100.000</p>
+          <p>Ukuran: 1 model saja</p>
+        </article>
 
-      <!-- Ikat Pinggang -->
-      <article class="kartu-produk">
-        <img src="/assets/ikatHippo.jpeg" alt="Ikat Pinggang Hippo">
-        <h1>Ikat Pinggang</h1>
-        <p>Harga: Rp 100.000</p>
-        <p>Ukuran: 1 model saja</p>
-      </article>
+        <article class="kartu-produk" data-kategori="aksesoris">
+          <img src="/assets/hippoCorduroy.jpeg" alt="Topi Corduroy HippoDvsn">
+          <h1>Topi Mesh HippoDvsn</h1>
+          <p>Harga: Rp 160.000</p>
+          <p>Ukuran: 1 model saja</p>
+        </article>
 
-      <!-- Topi Mesh -->
-      <article class="kartu-produk">
-        <img src="/assets/hippoCorduroy.jpeg" alt="Topi Corduroy HippoDvsn">
-        <h1>Topi Mesh HippoDvsn</h1>
-        <p>Harga: Rp 160.000</p>
-        <p>Ukuran: 1 model saja</p>
-      </article>
+        <article class="kartu-produk" data-kategori="pakaian">
+          <img src="/assets/SweaterHoodie.jpeg" alt="SweaterHoodie HippoDvsn">
+          <h1>Sweater Hoodie HippoDvsn</h1>
+          <p>Harga: Rp 300.000</p>
+          <p>Ukuran: 1 model saja</p>
+        </article>
 
-      <!-- Sweater Hoodie -->
-      <article class="kartu-produk">
-        <img src="/assets/SweaterHoodie.jpeg" alt="SweaterHoodie HippoDvsn">
-        <h1>Sweater Hoodie HippoDvsn</h1>
-        <p>Harga: Rp 300.000</p>
-        <p>Ukuran: 1 model saja</p>
-      </article>
+      </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-    <footer class="footer-home">
-        <div class="footer-home">
-            <p>&copy; 2026 Quality Distro. Hak Cipta Dilindungi.</p>
-            <p>Kota Palu, Sulawesi Tengah</p>
-            <div class="link-media-sosial">
-                <a href="https://www.instagram.com/quality_.distro/" target="_blank">Instagram</a>
-                <a href="https://wa.me/6282191925738" target="_blank">WhatsApp</a>
-            </div>
-        </div>
-    </footer>
-</body>
+    <!-- FOOTER -->
+      <footer class="footer-home">
+          <div class="footer-home">
+              <p>&copy; 2026 Quality Distro. Hak Cipta Dilindungi.</p>
+              <p>Kota Palu, Sulawesi Tengah</p>
+              <div class="link-media-sosial">
+                  <a href="https://www.instagram.com/quality_.distro/" target="_blank">Instagram</a>
+                  <a href="https://wa.me/6282191925738" target="_blank">WhatsApp</a>
+              </div>
+          </div>
+      </footer>
+  </body>
+  <script src="/js/script.js"></script>
 </html>
