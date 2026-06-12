@@ -12,31 +12,30 @@ Proyek website ini dikembangkan oleh **Kelompok 1** sebagai bagian dari *submiss
 ---
 
 ## 🎨 Desain Visual (Warna & Tipografi)
-Website ini menggunakan palet warna dan tipografi yang dirancang khusus untuk menonjolkan identitas *streetwear*:
+Website ini menggunakan palet warna dan tipografi yang dirancang khusus untuk menonjolkan identitas 
 
 **1. Tipografi (Font)**
-* **Bebas Neue:** Digunakan untuk semua judul (*heading*) dan logo untuk memberikan kesan tegas, berani, dan kekinian[cite: 1, 2, 3, 4, 5, 6].
-* **Montserrat:** Digunakan untuk teks paragraf, deskripsi, dan menu navigasi agar bersih dan sangat mudah dibaca (*legible*)[cite: 1, 2, 3, 4, 5, 6].
-
+* **Bebas Neue:** Digunakan untuk semua judul (*heading*) dan logo untuk memberikan kesan tegas, berani, dan kekinian
+* **Montserrat:** Digunakan untuk teks paragraf, deskripsi, dan menu navigasi agar bersih dan sangat mudah dibaca 
 **2. Palet Warna (Color Palette)**
-Sistem warna diatur secara terpusat menggunakan *CSS Variables*[cite: 4, 5, 6]:
-* ⬛ **Latar Utama (`#121212`):** Hitam pekat untuk bagian utama konten[cite: 4, 5, 6].
-* ◼️ **Latar Sekunder (`#1A1A1A`):** Abu-abu sangat gelap untuk *navbar*, *footer*, dan kartu produk[cite: 4, 5, 6].
-* ⬜ **Teks Utama (`#E0E0E0`):** Putih keabu-abuan agar teks nyaman dibaca dan tidak menyilaukan mata[cite: 4, 5, 6].
-* 🟥 **Aksen Merah (`#E3000F`):** Merah menyala untuk menonjolkan elemen penting seperti tombol, status aktif, dan efek *hover*[cite: 4, 5, 6].
+Sistem warna diatur secara terpusat menggunakan *CSS Variables*
+* ⬛ **Latar Utama (`#121212`):** Hitam pekat untuk bagian utama konten
+* ◼️ **Latar Sekunder (`#1A1A1A`):** Abu-abu sangat gelap untuk *navbar*, *footer*, dan kartu produk
+* ⬜ **Teks Utama (`#E0E0E0`):** Putih keabu-abuan agar teks nyaman dibaca dan tidak menyilaukan mata
+* 🟥 **Aksen Merah (`#E3000F`):** Merah menyala untuk menonjolkan elemen penting seperti tombol, status aktif, dan efek *hover*
 
 ---
 
 ## 🚀 Fitur Utama (Features)
-* **Desain Responsif (Mobile-Friendly):** Tampilan otomatis menyesuaikan dengan ukuran layar perangkat (HP, Tablet, PC) dilengkapi dengan *Hamburger Menu* interaktif untuk navigasi *mobile*[cite: 4, 5, 6, 7].
-* **Filter Produk Dinamis:** Pengunjung dapat menyortir produk berdasarkan kategori (Semua, Pakaian, Aksesoris) secara instan tanpa perlu memuat ulang (*reload*) halaman[cite: 2, 7].
-* **Performa Cepat & Ringan:** Dibuat menggunakan SVG Ikon murni (Inline SVG) tanpa bergantung pada *library* ikon pihak ketiga, sehingga *loading* website sangat cepat[cite: 1, 2, 3].
-* **Modern Layouting:** Menggunakan sistem CSS Flexbox dan CSS Grid untuk memastikan elemen seperti kartu produk, tata letak footer, dan statistik tersusun rapi dan simetris[cite: 4, 5, 6].
+* **Desain Responsif (Mobile-Friendly):** Tampilan otomatis menyesuaikan dengan ukuran layar perangkat (HP, Tablet, PC) dilengkapi dengan *Hamburger Menu* interaktif untuk navigasi *mobile*
+* **Filter Produk Dinamis:** Pengunjung dapat menyortir produk berdasarkan kategori (Semua, Pakaian, Aksesoris) secara instan tanpa perlu memuat ulang (*reload*) halaman
+* **Performa Cepat & Ringan:** Dibuat menggunakan SVG Ikon murni (Inline SVG) tanpa bergantung pada *library* ikon pihak ketiga, sehingga *loading* website sangat cepat
+* **Modern Layouting:** Menggunakan sistem CSS Flexbox dan CSS Grid untuk memastikan elemen seperti kartu produk, tata letak footer, dan statistik tersusun rapi dan simetris
 
 ## 💻 Teknologi yang Digunakan (Tech Stack)
-* **HTML5:** Struktur semantik website[cite: 1, 2, 3].
-* **CSS3:** *Styling* (Murni/Vanilla CSS) menggunakan *CSS Variables*, *Flexbox*, *Grid*, dan animasi transisi/hover[cite: 4, 5, 6].
-* **JavaScript (Vanilla JS):** Logika untuk sistem filter kategori produk dan interaksi tombol *hamburger menu*[cite: 7].
+* **HTML5:** Struktur semantik website
+* **CSS3:** *Styling* (Murni/Vanilla CSS) menggunakan *CSS Variables*, *Flexbox*, *Grid*, dan animasi transisi/hover
+* **JavaScript (Vanilla JS):** Logika untuk sistem filter kategori produk dan interaksi tombol *hamburger menu*
 * **Ikon:** Phosphor Icons (Format SVG Inline).
 
 ## 📂 Struktur Direktori (Folder Structure)
