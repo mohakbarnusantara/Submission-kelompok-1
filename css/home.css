@@ -23,31 +23,32 @@ body {
     line-height: 1.6;
 }
 
-.logo img {
-    height: 50px;
-    width: auto;
-    display: block;
-   
-}
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-
+/* HEADER */
 header {
     background-color: var(--bg-sekunder);
     padding: 15px 50px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5 );
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
@@ -64,27 +65,40 @@ header {
 }
 
 .nav-links li a:hover {
-    color:  var(--aksen-merah);
+    color: var(--aksen-merah);
 }
 
+/* HERO SECTION */
 .hero-section {
-    padding: 80px 50px;
+    position: relative;
+    padding: 100px 50px;
     text-align: center;
-    background-color: var(--bg-utama);
+    background: url('/assets/hero-bg.jpg') center/cover no-repeat;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
 }
 
 .hero-content {
+    position: relative;
     max-width: 800px;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .hero-content h1 {
-    font-size: 1.1 rem;
-    color: var(--teks-utama) ;
+    font-size: 2.5rem;
+    color: var(--teks-utama);
     margin-bottom: 20px;
 }
+
 .hero-content p {
-    font-size: 1.1 rem;
+    font-size: 1.1rem;
     color: #A0A0A0;
     margin-bottom: 40px;
 }
@@ -94,18 +108,19 @@ header {
     background-color: var(--aksen-merah);
     color: #FFFFFF;
     text-decoration: none;
-    padding: 12PX 30PX;
+    padding: 12px 30px;
     font-weight: bold;
     font-size: 1.2rem;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-
+    transition: all 0.3s ease;
 }
 
 .btn-hero:hover {
-    background-color:#B3000C ;
+    background-color:#B3000C;
+    transform: scale(1.05);
 }
 
+/* KATEGORI */
 .kategori-highlight {
     padding: 60px 50px;
     background-color: var(--bg-sekunder);
@@ -115,15 +130,14 @@ header {
    text-align: center;
    font-size: 2.5rem;
    margin-bottom: 40px;
-   color: var(--teks-utama)
+   color: var(--teks-utama);
 }
 
-.grid-kategori{
+.grid-kategori {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
-
 
 .kartu-kategori {
     background-color: var(--bg-utama);
@@ -131,7 +145,12 @@ header {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5 );
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kartu-kategori:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.7);
 }
 
 .kartu-kategori img {
@@ -141,11 +160,12 @@ header {
 }
 
 .kartu-kategori h3 {
-    padding:  20px;
+    padding: 20px;
     font-size: 1.5rem;
     color: var(--teks-utama);
 }
 
+/* FOOTER */
 .footer-home {
     background-color: var(--bg-sekunder);
     padding: 40px 50px;
@@ -169,7 +189,7 @@ header {
     margin: 0 15px;
     font-weight: bold;
     letter-spacing: 1px;
-    transition: color 0.3 ease;
+    transition: color 0.3s ease;
 }
 
 .link-media-sosial a:hover {
