@@ -1,68 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quality Distro </title>
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality Distro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1e1e1e;
+      padding: 10px 20px;
+      color: #fff;
+    }
+    .navbar .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    .navbar h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      margin: 0;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero-section {
+      position: relative;
+      background: url('/assets/hero-bg.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero-section .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: auto;
+    }
+    .btn-hero {
+      background: #E3000F;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .btn-hero:hover { background: #b0000c; }
+    .kategori-highlight {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .grid-kategori {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .kartu-kategori {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .kartu-kategori img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .btn-cart {
+      background: #E3000F;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .btn-cart:hover { background: #b0000c; }
+    .testimoni {
+      background: #f1f1f1;
+      padding: 40px;
+      text-align: center;
+      font-style: italic;
+    }
+    .footer-home {
+      background: #1e1e1e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    .link-media-sosial a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .link-media-sosial img {
+      height: 24px;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="Home.html">
-                    <img src="/assets/quality-hero-section.png" alt="Logo Quality Distro">
-                </a>
-                <h2>Quality Distro</h2>
-            </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="Home.html">
+          <img src="/assets/quality-hero-section.png" alt="Logo Quality Distro">
+        </a>
+        <h2>Quality Distro</h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Produk.html">Produk</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <ul class="nav-links">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Produk.html">Produk</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section id="hero" class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Selamat Datang di Quality Distro</h1>
+      <p>Temukan koleksi pakaian berkualitas dengan harga terjangkau.</p>
+      <a href="Produk.html" class="btn-hero">Belanja Sekarang</a>
+    </div>
+  </section>
 
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1>Selamat Datang di Quality Distro</h1>
-            <h1>Temukan koleksi pakaian berkualitas dengan harga terjangkau</h1>
-            <p>Tampil beda dengan produk kebanggaan lokal. Quality Distro menyediakan kurasi pakaian dan aksesori terbaik dari ujung kepala hingga ujung kaki. Siap menemani aktivitasmu menyusuri sudut kota dengan gaya yang berani dan tidak pasaran.</p>
-            <a href="Produk.html" class="btn-hero">Lihat Koleksi Kami</a>
-        </div>
-    </section>
+  <section class="kategori-highlight">
+    <h2>Kategori Andalan Kami</h2>
+    <div class="grid-kategori">
+      <article class="kartu-kategori">
+        <img src="/assets/produk4.jpeg" alt="Kategori Jaket">
+        <h3>Jaket</h3>
+        <p>Mulai dari Rp 250.000</p>
+        <button class="btn-cart">Tambah ke Keranjang</button>
+      </article>
+      <article class="kartu-kategori">
+        <img src="/assets/produk2.jpeg" alt="Kategori Celana">
+        <h3>Celana</h3>
+        <p>Mulai dari Rp 180.000</p>
+        <button class="btn-cart">Tambah ke Keranjang</button>
+      </article>
+      <article class="kartu-kategori">
+        <img src="/assets/produkbaju.jpeg" alt="Kategori Baju">
+        <h3>Baju Kaos</h3>
+        <p>Mulai dari Rp 120.000</p>
+        <button class="btn-cart">Tambah ke Keranjang</button>
+      </article>
+    </div>
+  </section>
 
-    <section class="kategori-highlight">
-        <h2>Kategori Andalan Kami</h2>
-        <div class="grid-kategori">
-            <article class="kartu-kategori">
-                <img src="/assets/produk4.jpeg" alt="Kategori Jaket">
-                <h3>Jaket</h3>
-            </article>
-            <article class="kartu-kategori">
-                <img src="/assets/produk2.jpeg" alt="Kategori Celana">
-                <h3>Celana</h3>
-            </article>
-            <article class="kartu-kategori">
-                <img src="/assets/produkbaju.jpeg" alt="Kategori Baju">
-                <h3>Baju Kaos</h3>
-            </article>
-        </div>
-    </section>
+  <section class="testimoni">
+    <h2>Apa Kata Customer Kami</h2>
+    <blockquote>"Produk nyaman dipakai dan kualitasnya mantap!" - Andi</blockquote>
+    <blockquote>"Harga terjangkau, desain kekinian." - Sari</blockquote>
+  </section>
 
-    <footer class="footer-home">
-        <div class="footer-home">
-            <p>&copy; 2026 Quality Distro. Hak Cipta Dilindungi.</p>
-            <p>Kota Palu, Sulawesi Tengah</p>
-            <div class="link-media-sosial">
-                <a href="https://www.instagram.com/quality_.distro/" target="_blank">Instagram</a>
-                <a href="#">WhatsApp</a>
-            </div>
-        </div>
-    </footer>
+  <footer class="footer-home">
+    <p>&copy; 2026 Quality Distro. Hak Cipta Dilindungi.</p>
+    <p>Kota Palu, Sulawesi Tengah</p>
+    <div class="link-media-sosial">
+      <a href="https://www.instagram.com/quality_.distro/" target="_blank">Instagram</a>
+      <a href="#">WhatsApp</a>
+    </div>
+  </footer>
 </body>
 </html>
