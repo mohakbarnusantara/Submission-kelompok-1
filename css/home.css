@@ -96,9 +96,13 @@ header {
 
 /* --- HERO SECTION --- */
 .hero-section {
-    padding: 80px 50px;
+    padding: 150px 50px;
     text-align: center;
     background-color: var(--bg-utama);
+    background-image: linear-gradient(rgba(18, 18, 18, 0.75), rgba(18, 18, 18, 0.75)), url('/assets/bg-hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero-content {
