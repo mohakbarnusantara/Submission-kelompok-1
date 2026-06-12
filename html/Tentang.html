@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - Quality Distro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-utama: #121212;
+      --bg-sekunder: #1A1A1A;
+      --teks-utama: #E0E0E0;
+      --aksen-merah: #E3000F;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Montserrat',sans-serif; }
+    h1,h2,h3,.logo h2 { font-family:'Bebas Neue',sans-serif; letter-spacing:1.5px; }
+    body { background-color:var(--bg-sekunder); color:var(--teks-utama); line-height:1.6; }
+
+    header { background-color:var(--bg-sekunder); padding:15px 50px; box-shadow:0 2px 10px rgba(0,0,0,0.5); position:sticky; top:0; z-index:1000; }
+    .navbar { display:flex; justify-content:space-between; align-items:center; }
+    .logo { display:flex; align-items:center; gap:15px; }
+    .logo img { height:50px; width:auto; }
+    .nav-links { list-style:none; display:flex; gap:30px; }
+    .nav-links li a { text-decoration:none; color:var(--teks-utama); font-weight:bold; transition:color 0.3s ease; }
+    .nav-links li a:hover { color:var(--aksen-merah); }
+
+    .halaman-tentang { padding:60px 50px; background:var(--bg-utama); color:var(--teks-utama); }
+    .Tentang-container h1 { font-size:3rem; text-align:center; margin-bottom:10px; }
+    .Sub-judul { text-align:center; color:#A0A0A0; margin-bottom:40px; }
+
+    .tentang-konten { display:flex; gap:40px; align-items:center; justify-content:center; flex-wrap:wrap; }
+    .logo-besar img { width:250px; animation:fadeIn 1.5s ease; }
+    .tentang-teks { max-width:600px; animation:fadeIn 2s ease; }
+
+    .tentang-toko { display:flex; justify-content:space-around; margin-top:50px; flex-wrap:wrap; gap:20px; }
+    .info { background:var(--bg-sekunder); padding:20px; border-radius:8px; text-align:center; width:250px; box-shadow:0 4px 8px rgba(0,0,0,0.5); transition:transform 0.3s ease; }
+    .info:hover { transform:translateY(-5px); }
+    .info h3 { margin-bottom:10px; }
+
+    .testimoni { margin-top:60px; background:#1A1A1A; padding:40px; text-align:center; font-style:italic; border-radius:8px; }
+    .testimoni h2 { margin-bottom:20px; }
+
+    .footer-home { background-color:var(--bg-sekunder); padding:40px 50px; text-align:center; border-top:1px solid #333; }
+    .footer-home p { color:#A0A0A0; margin-bottom:5px; font-size:0.9rem; }
+    .link-media-sosial { margin-top:20px; }
+    .link-media-sosial a { color:var(--teks-utama); text-decoration:none; margin:0 15px; font-weight:bold; letter-spacing:1px; transition:color 0.3s ease; }
+    .link-media-sosial a:hover { color:var(--aksen-merah); }
+
+    @keyframes fadeIn { from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:translateY(0);} }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="Home.html"><img src="/assets/quality-hero-section.png" alt="Logo Quality Distro"></a>
+        <h2>Quality Distro</h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Produk.html">Produk</a></li>
+        <li><a href="Tentang.html">Tentang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="halaman-tentang">
+    <div class="Tentang-container">
+      <h1>Tentang Kami</h1>
+      <p class="Sub-judul">Kisah dan Dedikasi Kami untuk Fesyen Lokal</p>
+    </div>
+
+    <div class="tentang-konten">
+      <div class="logo-besar">
+        <img src="/assets/quality-hero-section.png" alt="Logo Quality Distro">
+      </div>
+      <div class="tentang-teks">
+        <p>Quality Distro lahir dari semangat untuk mengangkat potensi industri kreatif dan fesyen anak muda di Kota Palu, Sulawesi Tengah.</p>
+        <p>Setiap produk kami diproduksi dengan standar bahan terbaik, memastikan kenyamanan maksimal untuk aktivitas harianmu.</p>
+      </div>
+    </div>
+
+    <div class="tentang-toko">
+      <div class="info">
+        <h3>📍 Lokasi</h3>
+        <a class="link" href="https://www.google.com/maps/place/Quality/" target="_blank">Jln. R. E. Martadinata Tondo</a>
+      </div>
+      <div class="info">
+        <h3>⏰ Jam Operasional</h3>
+        <p>Senin - Minggu <br> 07.00 - 00.00 WITA</p>
+      </div>
+      <div class="info">
+        <h3>📞 Kontak</h3>
+        <a class="link" href="https://wa.me/6282191925738" target="_blank">WhatsApp: 0821-9192-5738</a><br>
+        <a class="link" href="https://www.instagram.com/quality_.distro/" target="_blank">Instagram: @quality_.distro</a>
+      </div>
+    </div>
+
+    <section class="testimoni">
+      <h2>Apa Kata Customer Kami</h2>
+      <blockquote>"Produk nyaman dipakai dan kualitasnya mantap!" - Bagus</blockquote>
+      <blockquote>"Harga terjangkau, desain kekinian." - Fahrul</blockquote>
+    </section>
+  </section>
+
+  <footer class="footer-home">
+    <p>&copy; 2026 Quality Distro. Hak Cipta Dilindungi.</p>
+    <p>Kota Palu, Sulawesi Tengah</p>
+    <div class="link-media-sosial">
+      <a href="https://www.instagram.com/quality_.distro/" target="_blank">Instagram</a>
+      <a href="https://wa.me/6282191925738" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
+</body>
+</html>
