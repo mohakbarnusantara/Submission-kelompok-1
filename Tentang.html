@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quality Distro</title>
-  <link rel="stylesheet" href="/css/Produk.css">
+  <title>Tentang Kami - Quality Distro</title>
+  <link rel="stylesheet" href="/css/tentang.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="Home.html">
+                <a href="index.html">
                     <img src="/assets/quality-hero-section.png" alt="Logo Quality Distro">
                 </a>
                 <h2>Quality Distro</h2>
@@ -30,7 +28,7 @@
             <ul class="nav-links">
                 <li class="tombol-tutup" id="tombol-tutup">&times;</li>
                 <li>    
-                    <a href="Home.html">
+                    <a href="index.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
                             <path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path>
                         </svg>
@@ -57,106 +55,61 @@
         </nav>
     </header>
 
-    <!-- TAMPILAN PRODUK -->
-    <section class="produk-highlight">
-      <h2>Produk Kami</h2>
+  <section class="halaman-tentang">
+    <div class="Tentang-container">
+      <h1>Tentang Kami</h1>
+      <p class="Sub-judul">Kisah dan Dedikasi Kami untuk Fesyen Lokal</p>
+    </div>
 
-      <div class="filter-container">
-          <button class="btn-filter aktif" data-filter="semua">Semua</button>
-          <button class="btn-filter" data-filter="pakaian">Pakaian</button>
-          <button class="btn-filter" data-filter="aksesoris">Aksesoris</button>
+    <div class="tentang-konten">
+      <div class="logo-besar">
+        <img src="/assets/quality-hero-section.png" alt="Logo Quality Distro">
       </div>
-
-      <div class="grid-produk">
-
-        <article class="kartu-produk" data-kategori="pakaian">
-          <img src="/assets/produk4.jpeg" alt="Kategori Jaket">
-          <h1>Jaket</h1>
-          <p>Harga: Rp 350.000</p>
-          <p>Ukuran: M, L, XL</p>
-        </article>
-
-        <article class="kartu-produk" data-kategori="pakaian">
-          <img src="/assets/produk3.jpeg" alt="Kategori Windbreaker">
-          <h1>Windbreaker</h1>
-          <p>Harga: Rp 400.000</p>
-          <p>Ukuran: M, L, XL</p>
-        </article>
-
-        <article class="kartu-produk" data-kategori="aksesoris">
-          <img src="/assets/produk5.jpeg" alt="Kategori Topi Cras Es Noster">
-          <h1>Topi Cras Es Noster</h1>
-          <p>Harga: Rp 150.000</p>
-          <p>Ukuran: 1 model saja</p>
-        </article>
-
-        <article class="kartu-produk" data-kategori="aksesoris">
-          <img src="/assets/produk6.jpeg" alt="Kategori Sandal Rushlight">
-          <h1>Sandal Rushlight</h1>
-          <p>Harga: Rp 200.000</p>
-          <p>Ukuran: 39 - 43</p>
-        </article>
-
-        <article class="kartu-produk" data-kategori="pakaian">
-          <img src="/assets/kaosEQBv.jpeg" alt="Kategori Kaos EQBV">
-          <h1>Kaos EQBV</h1>
-          <p>Harga: Rp 120.000</p>
-          <p>Ukuran: M, L, XL</p>
-        </article>
-
-        <article class="kartu-produk" data-kategori="pakaian">
-          <img src="/assets/celanaJeans.png" alt="Celana Pendek Jeans">
-          <h1>Celana Pendek jeans</h1>
-          <p>Harga: Rp 250.000</p>
-          <p>Ukuran: 28 - 33</p>
-        </article>
-
-        <article class="kartu-produk" data-kategori="pakaian">
-          <img src="/assets/CelanaPendekHitam.jpeg" alt="Celana Pendek Hitam">
-          <h1>Celana Pendek Hitam</h1>
-          <p>Harga: Rp 180.000</p>
-          <p>Ukuran: M, L, XL</p>
-        </article>
-
-        <article class="kartu-produk" data-kategori="aksesoris">
-          <img src="/assets/tasHippo.jpeg" alt="Tas Kecil Hippo">
-          <h1>Tas Kecil Hippo</h1>
-          <p>Harga: Rp 300.000</p>
-          <p>Ukuran: 1 model saja</p>
-        </article>
-
-        <article class="kartu-produk" data-kategori="aksesoris">
-          <img src="/assets/dompetRusher.jpeg" alt="Dompet Rusher">
-          <h1>Dompet Rusher</h1>
-          <p>Harga: Rp 150.000</p>
-          <p>Ukuran: 1 model saja</p>
-        </article>
-
-        <article class="kartu-produk" data-kategori="aksesoris">
-          <img src="/assets/ikatHippo.jpeg" alt="Ikat Pinggang Hippo">
-          <h1>Ikat Pinggang</h1>
-          <p>Harga: Rp 100.000</p>
-          <p>Ukuran: 1 model saja</p>
-        </article>
-
-        <article class="kartu-produk" data-kategori="aksesoris">
-          <img src="/assets/hippoCorduroy.jpeg" alt="Topi Corduroy HippoDvsn">
-          <h1>Topi Mesh HippoDvsn</h1>
-          <p>Harga: Rp 160.000</p>
-          <p>Ukuran: 1 model saja</p>
-        </article>
-
-        <article class="kartu-produk" data-kategori="pakaian">
-          <img src="/assets/SweaterHoodie.jpeg" alt="SweaterHoodie HippoDvsn">
-          <h1>Sweater Hoodie HippoDvsn</h1>
-          <p>Harga: Rp 300.000</p>
-          <p>Ukuran: 1 model saja</p>
-        </article>
-
+      <div class="tentang-teks">
+        <p>Quality Distro adalah toko pakaian yang didirikan dengan tujuan memberikan produk berkualitas tinggi dengan harga terjangkau. Kami percaya bahwa setiap orang berhak untuk tampil stylish tanpa harus menguras dompet. Dengan berbagai pilihan produk fashion untuk pria, kami berkomitmen untuk memberikan pengalaman belanja yang menyenangkan dan memuaskan bagi pelanggan kami.</p>
       </div>
+    </div>
+
+    <div class="tentang-toko">
+      <div class="info">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M128,60a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,60Zm0,64a20,20,0,1,1,20-20A20,20,0,0,1,128,124Zm0-112a92.1,92.1,0,0,0-92,92c0,77.36,81.64,135.4,85.12,137.83a12,12,0,0,0,13.76,0,259,259,0,0,0,42.18-39C205.15,170.57,220,136.37,220,104A92.1,92.1,0,0,0,128,12Zm31.3,174.71A249.35,249.35,0,0,1,128,216.89a249.35,249.35,0,0,1-31.3-30.18C80,167.37,60,137.31,60,104a68,68,0,0,1,136,0C196,137.31,176,167.37,159.3,186.71Z"></path>
+          </svg>
+          Lokasi
+        </h3>
+        <a class="link" href="https://www.google.com/maps/place/Quality/" target="_blank">Jln. R. E. Martadinata Tondo</a>
+      </div>
+      <div class="info">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm68-84a12,12,0,0,1-12,12H128a12,12,0,0,1-12-12V72a12,12,0,0,1,24,0v44h44A12,12,0,0,1,196,128Z"></path>
+          </svg> 
+          Jam Operasional
+        </h3>
+        <p>Senin - Minggu <br> 07.00 - 00.00 WITA</p>
+      </div>
+      <div class="info">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20ZM79.57,196.57a60,60,0,0,1,96.86,0,83.72,83.72,0,0,1-96.86,0ZM100,120a28,28,0,1,1,28,28A28,28,0,0,1,100,120ZM194,179.94a83.48,83.48,0,0,0-29-23.42,52,52,0,1,0-74,0,83.48,83.48,0,0,0-29,23.42,84,84,0,1,1,131.9,0Z"></path>
+          </svg>
+          Kontak
+        </h3>
+        <p>
+          <a class="link" href="https://wa.me/6282191925738" target="_blank">WhatsApp: 0821-9192-5738</a><br>
+          <a class="link" href="https://www.instagram.com/quality_.distro/" target="_blank">Instagram: @quality_.distro</a>
+        </p>
+      </div>
+    </div>
+
+    <section class="testimoni">
+      <h2>Apa Kata Customer Kami</h2>
+      <blockquote>"Produk nyaman dipakai dan kualitasnya mantap!" - Bagus</blockquote>
+      <blockquote>"Harga terjangkau, desain kekinian." - Fahrul</blockquote>
     </section>
+  </section>
 
-    <!-- FOOTER -->
     <footer class="footer-home">
         <p>&copy; 2026 Quality Distro. Hak Cipta Dilindungi.</p>
         <p>Kota Palu, Sulawesi Tengah</p>
@@ -175,6 +128,6 @@
             </a>
         </div>
     </footer>
-  </body>
-  <script src="/js/script.js"></script>
+    <script src="/js/script.js"></script>
+</body>
 </html>
