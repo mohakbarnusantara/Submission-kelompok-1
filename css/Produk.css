@@ -59,20 +59,22 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 
 .nav-links li a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     text-decoration: none;
     color: var(--teks-utama);
     font-weight: bold;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-    padding-bottom: 3px;
+    transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
     color: var(--aksen-merah);
-    border-bottom: 2px solid var(--aksen-merah);
 }
 
 /* HERO SECTION */
@@ -217,15 +219,20 @@ header {
 
 .link-media-sosial {
     margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
 }
 
 .link-media-sosial a {
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
     color: var(--teks-utama);
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
     letter-spacing: 1px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .link-media-sosial a:hover {
