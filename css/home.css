@@ -78,7 +78,7 @@ header {
 .hamburger {
     display: none; 
     cursor: pointer;
-    flex-direction: column; /* Typo diperbaiki dari 'ro' ke 'column' */
+    flex-direction: column; 
     gap: 5px;
 }
 
@@ -107,13 +107,13 @@ header {
 }
 
 .hero-content h1 {
-    font-size: 3rem; /* Typo '1.1 rem' diperbaiki */
+    font-size: 3rem; 
     color: var(--teks-utama);
     margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-size: 1.1rem; /* Typo spasi diperbaiki */
+    font-size: 1.1rem; 
     color: #A0A0A0;
     margin-bottom: 40px;
 }
@@ -134,7 +134,6 @@ header {
     background-color: #B3000C;
 }
 
-/* --- PROMO & CTA (Ditambahkan Layoutnya) --- */
 .promo, .cta {
     background-color: var(--aksen-merah);
     color: #fff;
@@ -148,7 +147,7 @@ header {
     color: #fff;
 }
 
-/* --- STATISTIK (Ditambahkan Flexbox agar sejajar ke samping) --- */
+
 .statistik {
     display: flex;
     justify-content: space-around;
@@ -168,7 +167,7 @@ header {
     color: #A0A0A0;
 }
 
-/* --- KEUNGGULAN (Ditambahkan Grid Layout) --- */
+
 .keunggulan {
     padding: 60px 50px;
     background-color: var(--bg-utama);
@@ -198,7 +197,7 @@ header {
     margin-bottom: 15px;
 }
 
-/* --- KATEGORI & PRODUK TERLARIS --- */
+
 .kategori-highlight, .produk-terlaris {
     padding: 60px 50px;
     background-color: var(--bg-sekunder);
@@ -244,7 +243,7 @@ header {
     font-weight: bold;
 }
 
-/* --- TESTIMONI (Ditambahkan Grid Layout) --- */
+
 .testimoni {
     padding: 60px 50px;
     background-color: var(--bg-sekunder);
@@ -278,7 +277,7 @@ header {
     font-style: normal;
 }
 
-/* --- FOOTER --- */
+
 .footer-home {
     background-color: var(--bg-sekunder);
     padding: 40px 50px;
@@ -314,7 +313,7 @@ header {
     color: var(--aksen-merah);
 }
 
-/* --- RESPONSIVE MOBILE --- */
+
 @media screen and (max-width: 768px) {
     header {
         padding: 15px 20px;
